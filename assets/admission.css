@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
+@import url("//db.onlinewebfonts.com/c/16efa2896f117dae2debeb23ab4715dd?family=DidoteTextW01-Italic");
+@import url("//db.onlinewebfonts.com/c/9a7e574c3eda05d71d03345d3f9e268e?family=FuturaLTW01-LightOblique");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
+@import url("//db.onlinewebfonts.com/c/16efa2896f117dae2debeb23ab4715dd?family=DidoteTextW01-Italic");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import url("//db.onlinewebfonts.com/c/39a2c7f346d5cfae7045aeb2fb50d9ad?family=LuloCleanW01-OneBold");
+@font-face {
+  font-family: "Braggadocio-W01";
+  src: url("http://static.wix.com/services/third-party/fonts/user-site-fonts/fonts/f305266f-adfb-4e4f-9055-1d7328de8ce6.eot?#iefix");
+  src: url("http://static.wix.com/services/third-party/fonts/user-site-fonts/fonts/f305266f-adfb-4e4f-9055-1d7328de8ce6.eot?#iefix")
+      format("eot"),
+    url("http://static.wix.com/services/third-party/fonts/user-site-fonts/fonts/518e4577-eecc-4ecd-adb4-2ee21df35b20.woff")
+      format("woff"),
+    url("http://static.wix.com/services/third-party/fonts/user-site-fonts/fonts/f46241ad-1f5d-4935-ad69-b0a78c2e191d.ttf")
+      format("truetype"),
+    url("http://static.wix.com/services/third-party/fonts/user-site-fonts/fonts/b2a0a25d-e054-4c65-bffa-e5760b48dec3.svg#b2a0a25d-e054-4c65-bffa-e5760b48dec3")
+      format("svg");
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.main-head {
+  height: 263px;
+  background-color: #6af67f;
+  box-shadow: 2px 3px #d4fdda;
+}
+
+.main-head h1 {
+  padding-left: 35px;
+  padding-top: 60px;
+  font-family: braggadocio-w01, fantasy;
+  font-weight: 400;
+  font-size: 42px;
+  height: auto;
+  width: auto;
+}
+
+nav ul li a {
+  color: #deb100;
+  font-size: 17px;
+  text-transform: uppercase;
+  line-height: 22px;
+  font-family: helvetica-w01-bold, helvetica-w02-bold, helvetica-lt-w10-bold,
+    sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.main-head h2 {
+  padding-left: 40px;
+  padding-top: 40px;
+  font-family: "Open Sans Condensed", sans-serif;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+/* starts here */
+
+#ad {
+  font-family: lulo-clean-w01-one-bold, sans-serif;
+  font-weight: 900;
+  font-size: 23px;
+  color: black;
+  letter-spacing: 3px;
+  position: relative;
+  top: 100px;
+  left: 360px;
+}
+
+#p-ad {
+  font-family: "times new roman", times, serif;
+  font-style: italic;
+  font-size: 22px;
+  margin: 0px 150px;
+  position: relative;
+  top: 150px;
+}
+
+/*all pages*/
+
+.btn {
+  height: 40px;
+  width: 110px;
+  background-image: linear-gradient(to right, #4a33d2, #c94676);
+  color: white;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  position: relative;
+  left: 800px;
+  top: 350px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-image: linear-gradient(to right, tomato, tomato);
+  transition: 0.5s;
+}
+
+#wm {
+  font-family: "libre baskerville", serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+
+#ut {
+  font-family: "libre baskerville", serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #0da680;
+}
+
+#footer {
+  position: relative;
+  top: 120px;
+  height: 168px;
+}
+
+.fot {
+  padding-top: 40px;
+  padding-left: 40px;
+}
+
+footer {
+  position: relative;
+  top: 300px;
+}
+
+@media only screen and (max-width: 768px) {
+  .main-head h1 {
+    font-size: 30px;
+    padding-top: 42px;
+    padding-left: 20px;
+  }
+
+  .main-head h2 {
+    padding-top: 20px;
+  }
+
+  nav ul li a {
+    color: black;
+  }
+
+  #check:checked #main {
+    display: none;
+  }
+
+  .btn {
+    position: relative;
+    left: 300px;
+  }
+
+  #ad {
+    position: relative;
+    left: 150px;
+  }
+
+  #p-ad {
+    margin: 0px;
+    padding-left: 20px;
+  }
+}

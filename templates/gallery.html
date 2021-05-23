@@ -1,0 +1,92 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/df64fcbb15.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'nav.css' %}">
+    <link rel="stylesheet" href="{% static 'gallery.css' %}">
+    <title>Gallery</title>
+</head>
+<body>
+    <header>
+        <div class="main-head">
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul>
+                    <li><a href="\" id="btrn">home</a></li>
+                    <li><a href="\gallery">Gallery</a></li>
+                    <li><a href="\admission" id="btrn">Admission</a></li>
+                    <li><a href="\academics" id="btrn">Academics</a></li>
+                    <li><a href="\contacts" id="btrn">Contacts</a></li>
+                    <li><a href="#" id="btrn">Online classes</a></li>
+                </ul>
+            </nav>
+            <h1>AL - ISLAH ENGLISH SCHOOL</h1>
+            <h2>Madathilkaranma, Oachira</h2>
+        </div>
+    </header>
+    <main id="main">
+            <div class="onest-parent">
+                <div>
+                    <h1 id="eg" class="egmob"><em>Event Gallery</em></h1>
+                    <img id="eg-pic" src="https://static.wixstatic.com/media/f33e7d_51142531e1f442d09a2a3d0e326e11d3~mv2.jpg/v1/fill/w_256,h_340,al_c,q_80,usm_0.66_1.00_0.01/IMG-20200131-WA0023.webp" alt="img">
+                </div>
+                <div id="onest-one">
+                    <h1 id="egmob"><em>Onam Celebration 2020-21</em></h1>
+                    <video id="vid1" playsinline="true" src="https://video.wixstatic.com/video/f33e7d_50d8c54ae56e4751ba7efdb389e75fb4/720p/mp4/file.mp4" controls></video>
+                </div>
+            </div>
+            <div class="onest-parent">
+                <div>
+                    <img id="eg-pic2" src="https://static.wixstatic.com/media/f33e7d_adb7afb056664d4fb49b7df6996fdb8c~mv2.jpg/v1/fill/w_263,h_349,al_c,q_80,usm_0.66_1.00_0.01/IMG-20200131-WA0019.webp" alt="img">
+                </div>
+                <div id="onest-one">
+                    <img id="sc" src="https://static.wixstatic.com/media/f33e7d_584118965eea4526a48c8e0ad513ab1a~mv2.jpg/v1/fill/w_554,h_309,al_c,q_80,usm_0.66_1.00_0.01/20191107_143559.webp" alt="img">
+                </div>
+            </div>
+            <div class="triplets">
+                <div id="trip1" style="display: flex; flex-direction: column;;">
+                    <img style="height: 349px; width: 267px;" src="https://static.wixstatic.com/media/f33e7d_6cd6330063c345cb9e9ad8aa29898a67~mv2.jpg/v1/fill/w_267,h_349,al_c,q_80,usm_0.66_1.00_0.01/IMG-20200131-WA0018.webp" alt="img">
+                    <h2 id="carnival" style=" padding-top: 10px; padding-left: 60px; font-family: 'Open Sans Condensed', sans-serif; letter-spacing: 1px;">Carnival</h2>
+                </div>
+                <div>
+                    <div id="trip2" style="display: inline;">
+                        <img style="padding-right: 90px;" src="https://static.wixstatic.com/media/f33e7d_bb7c3386ea98425897a5382c645082ea~mv2.jpg/v1/fill/w_192,h_338,al_c,q_80,usm_0.66_1.00_0.01/20191107_132538.webp" alt="img">
+                        <img id="img-trp" style="padding-right: 80px;" src="https://static.wixstatic.com/media/f33e7d_ed2dbb9c9fbc4efc92a8e601afc64b03~mv2.jpg/v1/fill/w_191,h_338,al_c,q_80,usm_0.66_1.00_0.01/20191107_134305.webp" alt="img">
+                    </div>
+                    <h2 style=" padding-top: 10px; padding-left: 140px; font-family: 'Open Sans Condensed', sans-serif; letter-spacing: 1px;">Orphanage Visit</h2>
+                </div>
+            </div>
+            <div style=" padding-top: 60px; display: flex; justify-content: space-around;" >
+                <div id="evd" >
+                    <video style="height: 218px; width: 390px; border-style: ridge;" playsinline="true" src="https://video.wixstatic.com/video/f33e7d_d8746c6530534188bc2a30c1d1969a56/1080p/mp4/file.mp4" controls></video>
+                    <h2 style=" padding-left: 40px; font-family: 'Open Sans Condensed', sans-serif; letter-spacing: 1px;">Environmental Day Inaguration</h2>
+                </div>
+                <img id="books" style=" padding-bottom: 10px; height: 266px; width: 399px;" src="https://static.wixstatic.com/media/f33e7d_0c951d0aa7f8484b8194bf71c769a9ab~mv2.jpg/v1/fill/w_399,h_266,al_c,q_80,usm_0.66_1.00_0.01/vayanadinam.webp" alt="img">
+            </div>
+            <div style=" padding-top: 40px; display: flex; justify-content: space-around;">
+                <div id="jn" >
+                    <video id="video" style="height: 270px; width: 480px; border-style: ridge;" playsinline="true" src="https://video.wixstatic.com/video/f33e7d_29b6c7d0465349688ef853c45807dd3f/1080p/mp4/file.mp4" controls></video>
+                    <h2 style=" padding-left: 40px; font-family: 'Open Sans Condensed', sans-serif; letter-spacing: 1px; font-size: 34px;"><em>Children's Day Celebration</em></h2>
+                </div>
+            </div>
+            <button class="btn">Next</button>
+    </main>
+    <footer>
+        <div id="footer">
+            <hr id="hr">
+            <div class="fot">
+                <span id="wm" >Website Maintained by</span>
+                <span id="ut" >Utech</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

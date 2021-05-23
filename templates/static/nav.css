@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "HelveticaW02-Bold";
+  src: url("http://db.onlinewebfonts.com/t/50296ce96471759b7ec49aec9ad37f3c.eot"); /* IE9*/
+  src: url("http://db.onlinewebfonts.com/t/50296ce96471759b7ec49aec9ad37f3c.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("http://db.onlinewebfonts.com/t/50296ce96471759b7ec49aec9ad37f3c.woff2")
+      format("woff2"),
+    /* chrome firefox */
+      url("http://db.onlinewebfonts.com/t/50296ce96471759b7ec49aec9ad37f3c.woff")
+      format("woff"),
+    /* chrome firefox */
+      url("http://db.onlinewebfonts.com/t/50296ce96471759b7ec49aec9ad37f3c.ttf")
+      format("truetype"),
+    /* chrome firefox opera Safari, Android, iOS 4.2+*/
+      url("http://db.onlinewebfonts.com/t/50296ce96471759b7ec49aec9ad37f3c.svg#HelveticaW02-Bold")
+      format("svg"); /* iOS 4.1- */
+}
+@import url("//db.onlinewebfonts.com/c/f7d1b2995a6dff7abcda304d226aa67d?family=HelveticaW01-Bold");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: rgb(0, 0, 0);
+  height: 67px;
+  width: 100%;
+  position: relative;
+  top: 4px;
+}
+
+nav ul {
+  float: right;
+  margin-left: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 47px;
+  margin: 0 20px;
+}
+
+#btrn {
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  text-transform: uppercase;
+  line-height: 22px;
+  font-family: helvetica-w01-bold, helvetica-w02-bold, helvetica-lt-w10-bold,
+    sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+#btrn.active,
+#btrn:hover {
+  color: #deb100;
+  transition: 0.5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 67px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #deb100;
+    z-index: 999;
+    top: 67px;
+    right: -100%;
+    text-align: center;
+    align-content: center;
+    transition: all 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  #check:checked ~ ul {
+    right: 0;
+  }
+
+  #btrn.active,
+  #btrn:hover {
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+  }
+}
